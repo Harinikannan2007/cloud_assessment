@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid</title>
+  <style>
+    .grid-container {
+      display: inline grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      background-color: #4e4caf;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.2em;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 1fr; /* Stack items on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="grid-item">jasmine</div>
+    <div class="grid-item">lily</div>
+    <div class="grid-item">lotus</div>
+    <div class="grid-item">tiger lily</div>
+    <div class="grid-item">hybiscus</div>
+    <div class="grid-item">sun flower</div>
+  </div>
+</body>
+</html>
