@@ -1,31 +1,77 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>My Circle of Friends</title>
   </head>
-  <body>
-   <nav class="bg-black">
-     <ul class="flex space-x-6">
-        <li>
-            <a  href="./praveena.html" class="text-white">praveena</a>
-        </li>
-        <li>
-          <a href="./manasa.html"  class="text-white">maanasa</a>
-        </li>
-        <li>
-           <a  href="./jayzz.html" class="text-white">jayzz</a> 
-        </li>
-        <li>
-            <a href="./priyu.html"  class="text-white">priyu</a>
-        </li>
-     </ul>
-  </nav>
-  <footer class="bg-red/-500">
-    <h3 class="text-green-500">
-        she is my friend
-    </h3>
-  </footer>
+  <body class="bg-gradient-to-br from-gray-100 to-gray-200 text-gray-800 font-sans">
+
+    <!-- Header -->
+    <header class="bg-indigo-700 text-white py-8 text-center shadow-lg">
+      <h1 class="text-5xl font-extrabold tracking-wide">My Circle of Friends</h1>
+      <p class="text-xl mt-3 italic">A celebration of connection, loyalty, and shared memories</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-black p-4 shadow-md">
+      <ul class="flex flex-wrap justify-center space-x-6 text-lg font-medium">
+        <li><a href="#praveena" class="text-white hover:text-yellow-300 transition">Praveena</a></li>
+        <li><a href="#prabhu" class="text-white hover:text-yellow-300 transition">Prabhu</a></li>
+        <li><a href="#jayzz" class="text-white hover:text-yellow-300 transition">Jayzz</a></li>
+        <li><a href="#priyu" class="text-white hover:text-yellow-300 transition">Priyu</a></li>
+        <li><a href="#gallery" class="text-white hover:text-yellow-300 transition">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="p-6 space-y-12 max-w-5xl mx-auto">
+
+      <!-- Friend Cards -->
+      <section id="praveena" class="bg-white rounded-xl shadow-md p-6 border-l-4 border-indigo-500">
+        <h2 class="text-3xl font-bold text-indigo-700 mb-4">Praveena</h2>
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1" alt="Portrait of Praveena" class="rounded-lg shadow-md mb-4 w-full">
+        <p class="text-lg leading-relaxed">Praveena embodies grace and wisdom. Her ability to listen deeply and offer thoughtful guidance makes her the emotional anchor of our group. Whether navigating challenges or celebrating milestones, she brings clarity and calm to every moment.</p>
+      </section>
+
+      <section id="prabhu" class="bg-white rounded-xl shadow-md p-6 border-l-4 border-pink-500">
+        <h2 class="text-3xl font-bold text-pink-700 mb-4">Prabhu</h2>
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Portrait of Prabhu" class="rounded-lg shadow-md mb-4 w-full">
+        <p class="text-lg leading-relaxed">Prabhu brings laughter and spontaneity. His creative spirit and infectious energy make every moment unforgettable. He’s the spark that turns ordinary days into cherished memories.</p>
+      </section>
+
+      <section id="jayzz" class="bg-white rounded-xl shadow-md p-6 border-l-4 border-green-500">
+        <h2 class="text-3xl font-bold text-green-700 mb-4">Jayzz</h2>
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="Portrait of Jayzz" class="rounded-lg shadow-md mb-4 w-full">
+        <p class="text-lg leading-relaxed">Jayzz is our tech wizard and problem-solver. Whether it's coding or cracking jokes, he’s always sharp and dependable. His curiosity and drive inspire us to keep learning and growing together.</p>
+      </section>
+
+      <section id="priyu" class="bg-white rounded-xl shadow-md p-6 border-l-4 border-purple-500">
+        <h2 class="text-3xl font-bold text-purple-700 mb-4">Priyu</h2>
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Portrait of Priyu" class="rounded-lg shadow-md mb-4 w-full">
+        <p class="text-lg leading-relaxed">Priyu is the sunshine of our squad—warm, kind, and always ready to lend a hand. Her positivity lifts everyone up, and her compassion makes her truly unforgettable.</p>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="bg-blue-50 rounded-xl shadow-md p-6 border-l-4 border-blue-400">
+        <h2 class="text-3xl font-bold text-blue-700 mb-4">Gallery</h2>
+        <p class="text-lg mb-6">A glimpse into the laughter, adventures, and unforgettable moments we've shared. These snapshots capture the essence of our friendship — spontaneous, joyful, and enduring.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70" alt="Friends laughing together" class="rounded-lg shadow-md hover:scale-105 transition">
+          <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce" alt="Group hug moment" class="rounded-lg shadow-md hover:scale-105 transition">
+          <img src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7" alt="Picnic with friends" class="rounded-lg shadow-md hover:scale-105 transition">
+          <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91" alt="Celebration with friends" class="rounded-lg shadow-md hover:scale-105 transition">
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-red-500 text-white text-center py-6 mt-12 shadow-inner">
+      <p class="text-xl font-semibold">Friendship is not just a bond — it's a legacy we build together ❤️</p>
+      <p class="text-sm mt-2">&copy; 2025 My Friends Page. All rights reserved.</p>
+    </footer>
+
   </body>
 </html>
